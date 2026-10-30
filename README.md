@@ -1,4 +1,5 @@
 # 3dautomision
+<<<<<<< HEAD
 
 A workspace for the 3D floor-plan automation application. Open the **3dautomision** root folder in VS Code.
 
@@ -66,3 +67,6 @@ pnpm --filter clientserver build
 pnpm --filter clientserver typecheck
 pnpm --filter backend dev
 ```
+=======
+3D Automation Project using Next.js and Three.js
+>>>>>>> 299d99b827b31cd8fcf749763be26dbb336b8057
