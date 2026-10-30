@@ -1,0 +1,20 @@
+{
+  "name": "3dautomision",
+  "private": true,
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "pnpm --filter clientserver dev",
+    "build": "pnpm --filter clientserver build",
+    "start": "pnpm --filter clientserver start",
+    "lint": "pnpm --filter clientserver lint",
+    "typecheck": "pnpm --filter clientserver typecheck",
+    "test": "pnpm --filter clientserver test",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

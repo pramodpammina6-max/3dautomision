@@ -1,0 +1,16 @@
+services:
+  mongo:
+    image: mongo:7
+    volumes: [mongo-data:/data/db]
+  web:
+    build: .
+    ports: ['3000:3000']
+    environment:
+      MONGODB_URI: mongodb://mongo:27017
+      MONGODB_DB: 3dautomision
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET (openssl rand -hex 32)}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-6-astra}
+    depends_on: [mongo]
+volumes:
+  mongo-data:

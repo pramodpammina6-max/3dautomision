@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body {
+  background: #020617;
+  color: #e2e8f0;
+  color-scheme: dark;
+}
